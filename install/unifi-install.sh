@@ -28,12 +28,12 @@ $STD apt-get update
 $STD apt-get install -y temurin-17-jre
 msg_ok "Installed Eclipse Temurin JRE"
 
-msg_info "Installing MongoDB"
+msg_info "Installing MongoDB (v4.4)"
 wget -qO- https://www.mongodb.org/static/pgp/server-4.4.asc | gpg --dearmor >/usr/share/keyrings/mongodb-server-4.4.gpg
 echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-4.4.gpg ] http://repo.mongodb.org/apt/debian bookworm/mongodb-org/4.4 main" >/etc/apt/sources.list.d/mongodb-org-4.4.list
 $STD apt-get update
 $STD apt-get install -y mongodb-org
-msg_ok "Installed MongoDB"
+msg_ok "Installed MongoDB (v4.4)"
 
 msg_info "Installing UniFi Network Server"
 wget -qO /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo.gpg
