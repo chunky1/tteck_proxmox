@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://github.com/chunky1/tteck_proxmox/raw/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/chunky1/tteck_proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
